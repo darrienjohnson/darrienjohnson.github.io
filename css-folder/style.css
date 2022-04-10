@@ -36,7 +36,6 @@ nav li{
 }
 
 nav li:hover{
-    color: #d4966a;
   transform: scale(1.125);
   transition: all 0.3s ease-in-out 0s;
 }
@@ -326,7 +325,7 @@ E N D  of CONTACT
 MEDIA QUERIES
 ----------------*/
 
-@media screen and (max-width:695px){
+/* @media screen and (max-width:695px){
   .side-nav-container{
     position: absolute;
     width: 18rem;
@@ -335,38 +334,94 @@ MEDIA QUERIES
     display: block;
     top: 0;
     right: -18rem;
+    transition: .4s;
   }
 
-  .side-nav-container .active{
+  .active{
     right: 0;
   }
 
   .toggle-btn{
     position: absolute;
-    top: 30px;
-    right: 330px;
+    top: 5px;
+    right: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
   }
 
-  .toggle-btn span{
-    width: 40px;
-    height: 4px;
-    margin-bottom: .4rem;
-    background: #5deccb;
-    display: block;
+.hamburger{
+width: 50px;
+height: 6px;
+background: #5deccb;
+border: 5px;
+transition: all .5s ease-in-out;
+}
+
+.hamburger::before{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #5deccb;
+  border: 5px;
+  transition: all .5s ease-in-out;
+  transform: translateY(-16px);
+  
+}
+
+.hamburger::after{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #5deccb;
+  border: 5px;
+  transition: all .5s ease-in-out;
+  transform: translateY(16px);
+}
+
+.open .hamburger{
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.open .hamburger::before{
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.open .hamburger::after{
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+  .toggle-btn:hover{
+    transform: scale(1.04);
+    transition: all 0.2s ease-in-out 0s;
   }
 
-  .side-nav li{
+  .side-nav-links li{
     padding: 1.2rem 1.8rem;
     text-align: center;
     margin-top: 1rem;
   }
 
-  .side-nav li a{
-    font-size: 1.6rem;
+  .side-nav-links li:hover{
+    background-color: #1b4683;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out 0s;
+  }
+
+  .side-nav-links li a{
+    font-size: 1.2rem;
   }
 
   .nav-menu{
     display: none;
   }
-
-}
+} */
