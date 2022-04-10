@@ -125,7 +125,7 @@ nav a:hover{
 }
 
 .header-social li a img{
-  width: 3rem;
+  width: 2rem;
   height: auto;
 }
 
@@ -351,13 +351,18 @@ MEDIA QUERIES
     cursor: pointer;
     transition: all .5s ease-in-out;
   }
-  
+  /* Active Class for Moving Hamburger and Side Nav Position */
   .active{
     right: 0;
   }
-
+  
   .active-toggle{
     right: 300px;
+  }
+  /* Active Class for Moving Hamburger and Side Nav Position */
+
+  .position-fixed{
+    position: fixed;
   }
 
 .hamburger{
