@@ -325,7 +325,7 @@ E N D  of CONTACT
 MEDIA QUERIES
 ----------------*/
 
-/* @media screen and (max-width:695px){
+@media screen and (max-width:695px){
   .side-nav-container{
     position: absolute;
     width: 18rem;
@@ -337,14 +337,12 @@ MEDIA QUERIES
     transition: .4s;
   }
 
-  .active{
-    right: 0;
-  }
-
+  
   .toggle-btn{
     position: absolute;
     top: 5px;
-    right: 300px;
+    right: 0px;
+    /* right: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,6 +350,14 @@ MEDIA QUERIES
     height: 60px;
     cursor: pointer;
     transition: all .5s ease-in-out;
+  }
+  
+  .active{
+    right: 0;
+  }
+
+  .active-toggle{
+    right: 300px;
   }
 
 .hamburger{
@@ -412,8 +418,7 @@ transition: all .5s ease-in-out;
   }
 
   .side-nav-links li:hover{
-    background-color: #1b4683;
-    transform: scale(1.02);
+    transform: scale(1.375);
     transition: all 0.2s ease-in-out 0s;
   }
 
@@ -424,4 +429,4 @@ transition: all .5s ease-in-out;
   .nav-menu{
     display: none;
   }
-} */
+}

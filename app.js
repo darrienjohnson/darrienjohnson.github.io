@@ -4,18 +4,21 @@ const sideNavLinks = document.querySelector('side-nav-links');
 const body = document.querySelector('body');
 let menuOpen = false;
 
-//Open and Close of Side NavBar
-toggleBtn.addEventListener('click', () => {
-  sideNav.classList.toggle('active')
+
+document.addEventListener('click', (e) => {
+  if (e.target.id !== 'toggle-btn' && e.target.id !== 'side-nav') {
+    sideNav.classList.remove('active');
+    toggleBtn.classList.remove('active-toggle');
+    toggleBtn.classList.remove('open')
+    menuOpen = false;
+  }
 });
 
-body.addEventListener('click', () => {
-  if (event.target.tagName !== 'a') {
-    return
-  }
-    sideNav.classList.remove('active')
-
-})
+//Open and Close of Side NavBar
+toggleBtn.addEventListener('click', () => {
+  sideNav.classList.toggle('active');
+  toggleBtn.classList.toggle('active-toggle');
+});
 
 //Hamburger button animation
 toggleBtn.addEventListener('click', () => {
