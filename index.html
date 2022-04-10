@@ -4,16 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css-folder/style.css">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+
+  <title>Darrien Johnson</title>
 </head>
 <body>
   <div class="container">
     <header class="header">
       <nav id="nav">
-        <a href="#" class="logo">dj.</a>
-        <!-- <button class="toggle"></button> -->
+        <a href="index.html" class="logo">DJ</a>
+        <div class="side-nav-container">
+          <div class="toggle-btn hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="side-nav">
+            <li class="side-nav-link"> <a href="#Projects">Projects</a></li>
+            <li class="side-nav-link"> <a href="#About">About</a></li>
+            <li class="side-nav-link"> <a href="#Contact">Contact</a></li>
+            <li class="side-nav-link"> <a href="" target="_blank" id="resume">Resume</a></li>
+          </ul>
+        </div>
         <ul class="nav-menu">
-          <li> <a href="#projects">Projects</a></li>
+          <li> <a href="#Projects">Projects</a></li>
           <li> <a href="#About">About</a></li>
           <li> <a href="#Contact">Contact</a></li>
         </ul>
@@ -21,93 +37,108 @@
       <div class="header-content">
         <div class="inner-header-container">
           <div class="profile-container">
-            <div class="portrait-container"></div>
+            <div class="portrait-container">
+              <img src="" alt="">
+            </div>
             <div class="name-container">
-              <h2 class="intro">Hello my name is</h2>
-              <h1 class="name">Darrien Johnson</h1>
+              <h3 class="intro">Hello my name is</h3>
+              <h1 class="name">Darrien Johnson.</h1>
+              <h2>I build experiences for the <span class="web-span">web</span>.</h2>
             </div>
             <div class="short-about-container"></div>
             <div class="header-social-container">
               <ul class="header-social">
-                <li><a href="" target="_blank"></a>Github</li>
-                <li><a href="" target="_blank"></a>Twitter</li>
-                <li><a href="" target="_blank"></a>LinkdIn</li>
-                <li><a href="" target="_blank"></a>Email</li>
+                <li><a href="https://github.com/darrienjohnson" target="_blank"><img src="images/GitHub-30-60-90px/icons8-github-90.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com/in/darrien-johnson-926b67159/" target="_blank"><img src="images/LinkedIn-30-60-90px/icons8-linkedin-90.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/darrien_johnson/" target="_blank"><img src="images/Instagram-30-60-90px/icons8-instagram-90.png" alt=""></a></li>
+                <li><a href="mailto:darrien.rjohnson@gmail.com" target="_blank"><img src="images/Email Open-50-100px/icons8-email-open-100.png" alt=""></a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section class="projects">
+    <section class="projects" id="Projects">
       <h2 class="title">Projects</h2>
       <div class="projects-inner-container">
-        <div class="project-card">
-          <div class="project-preview">
-            <img src="" alt="tip calculator app">
-          </div>
-          <div class="project-info">
-            <div class="project-title">
-              <h3>GratApp</h3>
-              <a href="">
-                <img src="" alt="github icon" class="github">
+        <div class="project-card-container">
+          <div class="card">
+            <div class="card-image-preview">
+              <a href="https://darrienjohnson.github.io/Gratapp/" target="_blank" class="card-image">
+                <img src="images/gratapp.jpg" alt="">
               </a>
             </div>
-            <h4>A calculator app specifically for finding out tip percentages</h4>
-            <h4>HTML, CSS, JavaScript</h4>
+            <div class="card-text-container">
+              <div class="card-text">
+                <h4>GratApp</h4>
+                <p>At a restaruant and dont know how much to tip? Use this Calculator app specifically for finding out tip percentages</p>
+                <div>
+                  <ul class="card-tools">
+                    <li class="card-tool">HTML</li><span>.</span>
+                    <li class="card-tool">CSS</li><span>.</span>
+                    <li class="card-tool">JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="project-preview">
-            <img src="" alt="tip calculator app">
-          </div>
-          <div class="project-info">
-            <div class="project-title">
-              <h3>Chef Beadie Bead</h3>
-              <a href="">
-                <img src="" alt="github icon" class="github">
+          <div class="card">
+            <div class="card-image-preview">
+              <a href="https://darrienjohnson.github.io/ChefBeadieBead/" target="_blank" class="card-image">
+                <img src="images/chefbeadiebead.jpg" alt="">
               </a>
             </div>
-            <h4>Landing page for a Baltimore Chef </h4>
-            <h4>HTML, CSS, JavaScript</h4>
+            <div class="card-text-container">
+              <div class="card-text">
+                <h4>Chef Beadie Bead</h4>
+                <p>Website for a Baltimore Chef</p>
+                <div>
+                  <ul class="card-tools">
+                    <li class="card-tool">HTML</li><span>.</span>
+                    <li class="card-tool">CSS</li><span>.</span>
+                    <li class="card-tool">JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="About">
       <h2 class="title">About</h2>
       <div class="about-inner-container">
         <div class="about-paragraph">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit laudantium odit porro eaque quam omnis commodi expedita? Beatae libero veniam vero magnam at consectetur, aliquid expedita placeat quibusdam, dolorum enim vitae architecto id non? Facilis tempore molestias impedit unde, deserunt illo nemo asperiores labore quam at mollitia, repudiandae nesciunt.</p>
+          <p>I'm a front end web developer with a passion for <span class="color-span">learning</span> new technologies. Like many others during the early 2000s my journey started with teaching others how to edit their Myspace account. My main focus theses days is to grow my skill and <span class="color-span">knowledge</span> of new technologies by building fun digital experiences.</p>
         </div>
         <div class="tools">
-          <h4>Tools</h4>
-          <h2>Here are a few technologies i've been working with and am currently learning</h2>
+          <h4>Here are a few <span class="color-span">technologies</span> i've been working with and am currently learning</h4>
           <ul class="tool-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Figma</li>
-            <li>Adobe Suite</li>
-            <li>Node.js</li>
-            <li>SQL</li>
+            <li class="tool">HTML</li>
+            <li class="tool">CSS</li>
+            <li class="tool">JavaScript</li>
+            <li class="tool">React</li>
+            <li class="tool">Figma</li>
+            <li class="tool">Adobe Suite</li>
+            <li class="tool">Node.js</li>
+            <li class="tool">MongoBD</li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="Contact">
       <h2>Lets Connect!</h2>
       <div class="contact-inner-container">
         <h3>Feel free to reach out!</h3>
-        <ul>
-          <li>Github</li>
-          <li>LinkdIn</li>
-          <li>Twitter</li>
-          <li>Email</li>
+        <ul class="contact-social-links">
+                <li><a href="" target="_blank"><img src="images/GitHub-30-60-90px/icons8-github-90.png" alt=""></a></li>
+                <li><a href="" target="_blank"><img src="images/LinkedIn-30-60-90px/icons8-linkedin-90.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/darrien_johnson/" target="_blank"><img src="images/Instagram-30-60-90px/icons8-instagram-90.png" alt=""></a></li>
+                <li><a href="mailto:darrien.rjohnson@gmail.com" target="_blank"><img src="images/Email Open-50-100px/icons8-email-open-100.png" alt=""></a></li>
         </ul>
       </div>
     </section>
   </div>
+  <script src="/app.js"></script>
 </body>
 </html>

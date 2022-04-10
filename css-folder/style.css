@@ -9,11 +9,61 @@ body {
   background-color: #0a192f;
   color: #8892b0;
   background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.625rem;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2.5rem;
+  padding: 1rem;
 }
 
+h3{
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+h4{
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+nav li{
+  list-style: none;
+  text-decoration: none;
+}
+
+nav li:hover{
+    color: #d4966a;
+  transform: scale(1.125);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header-social li{
+  list-style: none;
+}
+
+.card-tools{
+  list-style: none;
+  text-decoration: none;
+}
+.contact-social-links li{
+  list-style: none;
+}
+
+
 /*-------------
-HEADER CONTENT
+H E A D E R
 ----------------*/
+
+/*----Navbar--*/
+
+.side-nav-container{
+  display: none;
+}
+
 
 /*----Navbar--*/
 
@@ -22,12 +72,19 @@ nav{
   justify-content: space-between;
   padding: 1rem;
   text-decoration: none;
+  font-family: 'Electrolize', sans-serif;
 }
 
 nav a{
   text-decoration: none;
   margin: 0 1rem;
   color: #5deccb;
+  font-size: 1.2rem;
+}
+
+nav a:hover{
+  transform: scale(1.125);
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .logo{
@@ -39,21 +96,18 @@ nav a{
   justify-content: space-around;
 }
 
-.nav-menu li{
-  text-decoration: none;
-  list-style: none;
-}
+
 /*--Header content----*/
 
 .header-content{
   margin-top: 1rem;
-  margin-bottom:  1rem;
-  padding-left: 2rem;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
 }
 .name{
   color: #ccd6f6;
 }
-
+/*--Header Inner Container Area----*/
 .inner-header-container{
   margin: 0 auto;
   max-width: 62.5rem;
@@ -66,19 +120,109 @@ nav a{
   padding-top: 2rem;
 }
 
-.header-social li{
-  list-style: none;
+.header-social li:hover{
+  transform: scale(1.25);
+  transition: all 0.3s ease-in-out 0s;
 }
+
+.header-social li a img{
+  width: 3rem;
+  height: auto;
+}
+
+.web-span{
+  color: #5deccb;
+  font-size: 2rem;
+  font-family: 'Electrolize', sans-serif;
+}
+
 /*-------------
-E N D  of Header Content
+E N D  of H E A D E R
 ----------------*/
 
 /*------------------------------------------------*/
 
 /*-------------
-PROJECTS
+P R O J E C T S
 ----------------*/
 
+.projects{
+  margin: 1rem 0;
+}
+
+/*--Projects Inner Container Area----*/
+.projects-inner-container{
+  margin: 0 auto;
+  max-width: 62.5rem;
+}
+
+/*--Cards----*/
+
+.project-card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, .725fr));
+  grid-template-rows: 400px;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.card{
+  border-radius: 18px;
+  color: whitesmoke;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #353b41;
+}
+
+.card:hover{
+  transform: scale(1.09);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.card-image-preview{
+  width: 100%;
+  height: 60%;
+}
+
+.card-image{
+/* width: 80%;
+height: 80%; */
+object-fit: contain;
+}
+
+.card-image-preview img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.card-text-container{
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text{
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card-tools{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card-tool{
+  padding:4px;
+  margin: 2px;
+}
 /*-------------
 E N D  of PROJECTS
 ----------------*/
@@ -88,6 +232,48 @@ E N D  of PROJECTS
 /*-------------
 ABOUT
 ----------------*/
+
+.about{
+  margin: 1rem 0;
+  height: 40vh;
+}
+/*--About Inner Container Area----*/
+.about-inner-container{
+  margin: 0 auto;
+  max-width: 62.5rem;
+}
+
+.about-paragraph{
+  padding: 1rem;
+}
+
+.tools{
+  margin: 0 auto;
+  max-width: 50rem;
+  /* justify-content: center; */
+}
+.tool-list{
+  display: flex;
+  flex-wrap: wrap;
+margin: 0 auto;
+  width: 400px;
+}
+
+
+.tool{
+margin: 1rem;
+  font-size: 1rem;
+}
+
+.tool::marker{
+color: #5deccb;
+}
+
+.color-span{
+  color: #5deccb;
+  font-size: 1.2rem;
+  font-family: 'Electrolize', sans-serif;
+}
 
 /*-------------
 E N D  of ABOUT
@@ -101,6 +287,86 @@ E N D  of ABOUT
 CONTACT
 ----------------*/
 
+.contact{
+  margin-top: 5rem;
+  height: 40vh;
+  padding: 1rem;
+}
+/*--About Inner Container Area----*/
+.contact-inner-container{
+  margin: 0 auto;
+  max-width: 62.5rem;
+}
+
+.contact-social-links{
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.contact-social-links li:hover{
+  transform: scale(1.25);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.contact-social-links li a img{
+  width: 3rem;
+  height: auto;
+  margin: 0 1rem;
+}
+.contact-social-links li a img:hover{
+color: whitesmoke;
+}
+
+
 /*-------------
 E N D  of CONTACT
 ----------------*/
+
+/*-------------
+MEDIA QUERIES
+----------------*/
+
+@media screen and (max-width:695px){
+  .side-nav-container{
+    position: absolute;
+    width: 18rem;
+    height: 100%;
+    background: #112c53;
+    display: block;
+    top: 0;
+    right: -18rem;
+  }
+
+  .side-nav-container .active{
+    right: 0;
+  }
+
+  .toggle-btn{
+    position: absolute;
+    top: 30px;
+    right: 330px;
+  }
+
+  .toggle-btn span{
+    width: 40px;
+    height: 4px;
+    margin-bottom: .4rem;
+    background: #5deccb;
+    display: block;
+  }
+
+  .side-nav li{
+    padding: 1.2rem 1.8rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .side-nav li a{
+    font-size: 1.6rem;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+
+}
