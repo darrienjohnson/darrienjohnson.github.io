@@ -1,10 +1,10 @@
 const toggleBtn = document.getElementById('toggle-btn')
 const sideNav = document.getElementById('side-nav');
 const sideNavLinks = document.querySelector('side-nav-links');
-const body = document.querySelector('body');
+const body = document.getElementById('body');
 let menuOpen = false;
 
-
+//Close Side Nav Bar when click outside of links and navbar
 document.addEventListener('click', (e) => {
   if (e.target.id !== 'toggle-btn' && e.target.id !== 'side-nav') {
     sideNav.classList.remove('active');
@@ -13,6 +13,7 @@ document.addEventListener('click', (e) => {
     menuOpen = false;
   }
 });
+
 
 //Open and Close of Side NavBar
 toggleBtn.addEventListener('click', () => {
