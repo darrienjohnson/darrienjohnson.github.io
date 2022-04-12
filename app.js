@@ -26,9 +26,11 @@ toggleBtn.addEventListener('click', () => {
   if (!menuOpen) {
     toggleBtn.classList.add('open');
     menuOpen = true;
+    sideNavLinks.style.display = 'none'
   } else {
     toggleBtn.classList.remove('open')
     menuOpen = false;
   }
 });
+
 
