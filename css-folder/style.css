@@ -351,6 +351,7 @@ MEDIA QUERIES
     overflow-x: hidden;
     overflow-y: scroll;
     max-width: 100%;
+    width: 100vw;
   }
   
   .container{
