@@ -21,6 +21,12 @@ body{
     position: relative;
 }
 
+@media(max-width: 350px){
+    .header{
+        min-height: 50vh;
+    }
+}
+
 nav{
     display: flex;
     padding: 2% 6%;
