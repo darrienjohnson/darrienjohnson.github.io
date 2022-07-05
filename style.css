@@ -116,6 +116,9 @@ nav h3 a{
     100% {color: #ff0000;}
 }
 
+/*------Rainbow Animation Text------*/
+
+
 
 /*------HAMBURGER MENU------*/
 nav .fa-bars{
@@ -288,6 +291,32 @@ nav .fa-times{
     margin-top: 16px;
     margin-bottom: 15px;
     text-align: left;
+}
+
+.col ul{
+margin-left: 40px;
+    text-align: left;
+}
+
+.site-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 17px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px;
+    transition: .5s;
+    font-weight: 500;
+}
+
+.site-btn:hover{
+    -webkit-animation: rainbow 10s linear infinite alternate; 
+    transform: translateY(-2px);
+    background-color: #121212;
 }
 
 
