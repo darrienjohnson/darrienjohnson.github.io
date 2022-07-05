@@ -326,6 +326,7 @@ margin-left: 40px;
 }
 
 
+
 @media(max-width: 850px){
     .row{
         flex-direction: column;
@@ -374,10 +375,30 @@ margin-left: 40px;
 }
 
 .technologies div{
-    padding: 1rem 2rem;
+    padding: 10px 17px;
     font-size: 14px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    margin: 10px;
+    /* position: relative; */
+    /* display: inline-block; */
 }
 
+.tools{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 17px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px;
+    transition: .5s;
+    font-weight: 500;
+}
 /*------Social Links------*/
 
 
