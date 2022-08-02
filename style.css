@@ -371,18 +371,21 @@ margin-left: 40px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    width: 75%;
+    margin-top: 25px;
 }
 
 .technologies div{
-    padding: 10px 17px;
-    font-size: 14px;
+    padding: 2px;
+    font-size: 2.5rem;
     border-radius: 8px;
-    background-color: #fff;
-    color: #000;
-    margin: 10px;
-    /* position: relative; */
-    /* display: inline-block; */
+    color: whitesmoke;
+    margin: 5px;
+    width: 120px;
+    height: auto;
+}
+
+.technologies div p{
+    font-size: 14px;
 }
 
 .tools{
